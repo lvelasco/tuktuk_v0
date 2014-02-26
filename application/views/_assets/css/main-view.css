@@ -1,0 +1,258 @@
+/* Reset body padding and margins */
+body { margin:0; padding:0; }
+
+/* Make Header Sticky */
+#header_container { background:black; border:1px solid #666; height:70px; left:0; position:fixed; width:100%; top:0; }
+#header{ line-height:60px; margin:0 auto; width:940px; text-align:center; }
+
+#header input {
+    vertical-align: middle;
+    border: 1px solid #ccc;
+   width:600px;
+   height:40px;
+   line-height: 40px;
+  /* Safari 5, Chrome support border-radius without vendor prefix.
+   * FF 3.0/3.5/3.6, Mobile Safari 4.0.4 require vendor prefix.
+   * No support in Safari 3/4, IE 6/7/8, Opera 10.0.
+   */
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  
+  /* Chrome, FF 4.0 support box-shadow without vendor prefix.
+   * Safari 3/4/5 and FF 3.5/3.6 require vendor prefix.
+   * No support in FF 3.0, IE 6/7/8, Opera 10.0, iPhone 3.
+   * change the offsets, blur and color to suit your design.
+   */
+  -moz-box-shadow: 2px 2px 3px #666;
+  -webkit-box-shadow: 2px 2px 3px #666;
+  box-shadow: 2px 2px 3px #666;
+  
+  /* using a bigger font for demo purposes so the box isn't too small */
+  font-size: 12px;
+  
+  /* with a big radius/font there needs to be padding left and right
+   * otherwise the text is too close to the radius.
+   * on a smaller radius/font it may not be necessary
+   */
+  padding: 4px 7px;
+  
+  /* only needed for webkit browsers which show a rectangular outline;
+   * others do not do outline when radius used.
+   * android browser still displays a big outline
+   */
+  outline: 0;
+
+  /* this is needed for iOS devices otherwise a shadow/line appears at the
+   * top of the input. depending on the ratio of radius to height it will
+   * go all the way across the full width of the input and look really messy.
+   * ensure the radius is no more than half the full height of the input, 
+   * and the following is set, and everything will render well in iOS.
+   */
+  -webkit-appearance: none;
+  
+}
+
+
+/* CSS for the content of page. I am giving top and bottom padding of 80px to make sure the header and footer do not overlap the content.*/
+#container { margin:0 auto; overflow:auto; padding:80px 0; width:940px; }
+#content{}
+#nav {
+width: 25%;
+padding: 10px;
+margin-top: 1px;
+float: left;
+/*background:gray; */
+}
+#main {
+margin-left: 22%;
+margin-top: 1px;
+padding: 10px;
+}
+
+
+/* Make Footer Sticky */
+#footer_container { background:#eee; border:1px solid #666; bottom:0; height:60px; left:0; position:fixed; width:100%; }
+#footer { line-height:60px; margin:0 auto; width:940px; text-align:center; }
+
+img.main-logo-header {    
+    float:left;
+}
+
+#floatMenu {
+    position:absolute;
+    /*top:150px;*/
+    /*left:50%;*/
+    /*margin-left:235px;*/
+    width:180px;
+}
+
+#picAndName
+{
+    margin-bottom:5px;
+}
+
+
+
+#floatMenu ul {
+    /*margin-bottom:20px;*/
+    list-style-type: none;
+    margin-left:0px;
+    padding-left:0;
+}
+#floatMenu ul li a {
+    display:block;
+    border:1px solid #999;
+    background-color: #eee;
+    border-left:6px solid black;
+    text-decoration:none;
+    color:#999;
+    list-style-type: none;
+    margin-left:0px;
+    padding-left:0;
+    /*padding:5px 5px 5px 25px;*/
+}
+
+#floatMenu ul.float-menu-ul li a:hover {
+    border-color:orange;
+    list-style-type: none;
+}
+
+
+
+#floatMenu img.fb {
+    
+    background: red;
+    padding: 0;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -khtml-border-radius: 8px;  
+    border-radius: 8px;
+    overflow: hidden;
+    }
+
+    
+    .feed_head {
+    -webkit-border-radius: 5px 5px 0px 0px;
+    -moz-border-radius: 5px 5px 0px 0px;
+    border-radius: 5px 5px 0px 0px;
+    overflow: hidden;
+    border: #d9d9d9 solid 1px;
+    border-top: none;
+    background-color: orange;
+    height: 30px;
+    line-height: 30px;
+    color: #000;
+    font-size: 10px;
+    text-align: left;
+    font-weight:bold;
+    margin: 0;
+}
+.main_container{
+    margin: auto;
+    font-family: 'avenir_bookregular';
+    position: relative;
+    width: 700px;
+    
+}
+
+#main_container_section
+{
+   -webkit-border-radius: 5px 5px 0px 0px;
+    -moz-border-radius: 5px 5px 0px 0px;
+    border-radius: 5px 5px 0px 0px;
+    overflow: hidden;
+    border: #d9d9d9 solid 1px;
+    border-top: none;
+    background-color: orange;
+    height: 30px;
+    line-height: 30px;
+    color: #000;
+    font-size: 10px;
+    text-align: left;
+    font-weight:bold;
+    margin: 0;
+    
+}
+
+#main_container_subprincipal
+{
+    border: 1px #CDCDCD solid;
+    background-color: #f7f7f7;
+}
+
+#main_text
+{
+    font-family: 'avenir_bookregular';
+}
+
+
+#search_travel_form
+{
+    
+    width:30%;
+    float:left;
+    background-color: #f7f7f7;
+    border: 1px #CDCDCD solid;
+}
+
+#search_travel_results
+{
+    
+    width:70%;
+    float:left;
+    background-color: #f7f7f7;
+    border: 1px #CDCDCD solid;
+}
+
+
+.feeds_container{
+    width: 700px;
+}
+.feeds{
+    border: 1px #CDCDCD solid;
+}
+.feeds ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.feeds li {
+    padding: 14px 15px;
+    font-size: 13px;
+    color: #333333;
+    position: relative;
+    background: #fbfbfb url(images/right_sprtline.gif) repeat-x left bottom;
+}
+.feeds li.odd {
+    background: #f7f7f7 url(images/right_sprtline.gif) repeat-x left bottom;
+}
+.feeds li .feedtext {
+    width: 180px;
+    display: block;
+}
+.feeds li .iconAdd {
+    position: absolute;
+    right: 24px;
+    top: 25px;
+}
+.feeds li a {
+    color: #3cadcd;
+}
+.feeds .loading {
+    position: absolute;
+    left: 1px;
+    bottom: 1px;
+    padding: 5px 0;
+    background: #fafafa;
+    text-align: center;
+    width: 238px;
+    -webkit-border-radius: 0 0 5px 5px;
+    -moz-border-radius: 0 0 5px 5px;
+    border-radius: 0 0 5px 5px;
+    overflow: hidden;
+}
+.loading img,.loading span {
+    display: none;
+}
+
